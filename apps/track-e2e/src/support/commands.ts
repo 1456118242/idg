@@ -10,6 +10,9 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
+// support/index.d.ts
+export {};
+
 declare global {
   namespace Cypress {
     interface Chainable<Subject> {
