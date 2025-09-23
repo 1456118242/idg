@@ -1,10 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
-  override render() {
+  render() {
     return (
       <Html>
-        <Head>{/* You can add custom tags here */}</Head>
+        <Head>
+          {/* You can add custom tags here */}
+        </Head>
         <body>
           <Main />
           <NextScript />
