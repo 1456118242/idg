@@ -10,12 +10,9 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
-// support/index.d.ts
-export {};
-
-declare global {
-  export interface Chainable<Subject> {
-    login(email: string, password: string): void;
+declare namespace Cypress {
+  interface Chainable<Subject = any> {
+    login(email: string, password: string): Chainable<Subject>;
   }
 }
 
