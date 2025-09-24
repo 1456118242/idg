@@ -13,15 +13,8 @@
 // support/index.d.ts
 export {};
 
-// declare global {
-//   interface Chainable {
-//     login(email: string, password: string): void;
-//   }
-// }
-
-// src/support/index.d.ts
-declare namespace Cypress {
-  interface Chainable {
+declare global {
+  export interface Chainable<Subject> {
     login(email: string, password: string): void;
   }
 }
