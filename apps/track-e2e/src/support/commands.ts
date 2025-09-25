@@ -19,7 +19,7 @@ declare global {
   }
 }
 
-// -- This is a parent command --
+//@ts-expect-error: Explanation of why this error is expected
 Cypress.Commands.add('login', (email, password) => {
   console.log('Custom command example: Login', email, password);
 });
