@@ -5,7 +5,7 @@ describe('@idg/track-e2e', () => {
 
   it('should display welcome message', () => {
     // Custom command example, see `../support/commands.ts` file
-    //@ts-expect-error
+    //@ts-expect-error: Explanation of why this error is expected
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
